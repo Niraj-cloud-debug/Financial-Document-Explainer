@@ -1,0 +1,6 @@
+streamlit
+requests
+chromadb
+PyPDF2
+sentence-transformers
+torch
