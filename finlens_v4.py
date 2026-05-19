@@ -39,7 +39,7 @@ import chromadb
 # ════════════════════════════════════════════════════════════════════════════
 # CONFIG
 # ════════════════════════════════════════════════════════════════════════════
-SARVAM_API_KEY = "My API Key"   # ← Replace
+SARVAM_API_KEY = "MY_SARVAM_API"   # ← Replace
 
 STRUCTURED_FIELDS = {
     "Interest / Returns":  [r"interest rate[:\s]+([0-9.]+%?)", r"returns?[:\s]+([0-9.]+%?)", r"yield[:\s]+([0-9.]+%?)"],
