@@ -419,10 +419,10 @@ def ask_sarvam(messages: list, system: str) -> str:
         "https://api.sarvam.ai/v1/chat/completions",
         headers={"Authorization": f"Bearer {SARVAM_API_KEY}", "Content-Type": "application/json"},
         json={
-            "model": "sarvam-m",
+            "model": "sarvam-105b",
             "messages": [{"role": "system", "content": system}] + messages,
         },
-        timeout=30,
+        timeout=60,
     )
     resp.raise_for_status()
     raw = resp.json()["choices"][0]["message"]["content"]
@@ -525,7 +525,7 @@ def _tts_single(text: str, lang: str) -> tuple:
                 "inputs": [text],
                 "target_language_code": lang_code,
                 "speaker": speaker,
-                "model": "bulbul:v2",
+                "model": "bulbul:v3",
                 "enable_preprocessing": True,
             },
             timeout=25,
