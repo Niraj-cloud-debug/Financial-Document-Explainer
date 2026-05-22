@@ -398,7 +398,7 @@ def tts_lang_code(lang: str) -> str:
 
 
 def tts_speaker(lang: str) -> str:
-    return "anushka" if lang in ("Hindi", "Hinglish") else "arya"
+    return "priya" if lang in ("Hindi", "Hinglish") else "rahul"
 
 
 def stt_lang_code(lang: str) -> str:
